@@ -6,7 +6,7 @@
 
 #navje {
   position: fixed;
-  background: #949aa1;
+  background: #162b32;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,6 +14,10 @@
   width: 100vw;
   height: 200px;
   top: 0;
+  & h1 {
+    color: #e1fcfd;
+    font-size: 60px;
+  }
 }
 
 body {
@@ -25,6 +29,14 @@ body {
   right: 80px;
   top: 70px;
   position: fixed;
+  & h4 {
+    color: #e1fcfd;
+    font-size: 25px;
+    display: flex;
+    position: relative;
+    bottom: 35px;
+    left: 180px;
+  }
 }
 
 input {
@@ -37,39 +49,55 @@ input {
   display: flex;
   letter-spacing: 5px;
   align-items: center;
-  justify-content: center;
-  color: #3f3f4b;
-  text-shadow: 2px 2px 3px #fff;
-  font-size: 50px;
+  justify-content: space-between;
+  color: #e1fcfd;
+  text-shadow: 2px 2px 3px red;
+  font-size: 35px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-#menuItems li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
+  & li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    & input {
+      margin-right: 20px;
+    }
+  }
 }
 
 footer {
-  height: 100px;
-  background: black;
+  height: 200px;
+  background: #162b32;
+  color: #e1fcfd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #ulMovies {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 200px;
   margin: 10px;
+  grid-gap: 40px;
   display: grid;
   grid-template-rows: repeat(auto-fit, 450px);
   grid-template-columns: repeat(auto-fit, 250px);
   list-style: none;
-}
-
-img {
-  width: 250px;
-  height: 380px;
-  padding-top: 50px;
-  
+  & img {
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 380px;
+    z-index: -1;
+    border: 3px solid #162b32;
+    border-radius: 50px;
+  }
+  & li .movieTitle,
+  .movieYear {
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+  }
 }
