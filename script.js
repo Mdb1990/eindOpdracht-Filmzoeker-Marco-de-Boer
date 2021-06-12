@@ -73,7 +73,7 @@ const filterNieuwsteMovies = () => {
 // zoekveld aanroepen en in variabele zetten
 const searchField = document.getElementById("searchInput");
 
-// functie voor het zoeken en input naar lowercase.
+// functie/eventlistener voor het zoeken en input naar lowercase.
 searchField.addEventListener("keyup", (e) => {
   const inputField = e.target.value.toLowerCase();
   const movieSearch = movies.filter((movie) => {

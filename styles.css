@@ -71,7 +71,7 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #e1fcfd;
-  text-shadow: 2px 2px 3px red;
+  text-shadow: 2px 2px 3px;
   font-size: 35px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
